@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-navy: #06264A;
+    --color-navy-dark: #03172E;
+    --color-navy-light: #0A3563;
+    --color-green: #45B649;
+    --color-green-hover: #39993D;
+    --color-cyan: #00A8C6;
+    --color-bg-white: #FFFFFF;
+    --color-bg-secondary: #F6F8FA;
+    --color-text-primary: #10213B;
+    --color-text-secondary: #4B5563;
+    --color-border: #E5E7EB;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color: #10213B;
+    background-color: #FFFFFF;
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: #45B649;
+    color: #FFFFFF;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F6F8FA;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+  }
+}
+
+@layer utilities {
+  .hero-grid-pattern {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  }
+
+  .tech-card-shadow {
+    box-shadow: 0 4px 20px -2px rgba(6, 38, 74, 0.06), 0 2px 6px -1px rgba(6, 38, 74, 0.04);
+  }
+
+  .tech-card-shadow-hover {
+    box-shadow: 0 16px 32px -4px rgba(6, 38, 74, 0.12), 0 6px 12px -2px rgba(6, 38, 74, 0.06);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
