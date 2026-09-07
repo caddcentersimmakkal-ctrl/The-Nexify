@@ -117,7 +117,7 @@ export const ContactForm: React.FC = () => {
           Inquiry Received Successfully!
         </h3>
         <p className="text-sm text-brandText-secondary max-w-md mx-auto leading-relaxed">
-          Thank you for reaching out to <span className="font-bold text-navy">Nexify IT</span>.
+          Thank you for reaching out to <span className="font-bold text-navy">The Nexify</span>.
           Our technology team in Madurai will review your requirements and get back to you within 24 business hours.
         </p>
         <div className="pt-4">

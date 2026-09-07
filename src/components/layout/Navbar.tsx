@@ -336,7 +336,7 @@ export const Navbar: React.FC = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-green-brand flex-shrink-0" />
-                <span>contact@nexifyit.com</span>
+                <span>thenexifymadurai@gmail.com</span>
               </div>
             </div>
           </div>

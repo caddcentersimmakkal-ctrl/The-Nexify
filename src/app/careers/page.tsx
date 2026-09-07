@@ -240,7 +240,7 @@ export default function CareersPage() {
       };
 
       console.log(
-        "Submitting Nexify IT application:",
+        "Submitting The Nexify application:",
         applicationData
       );
 
@@ -553,7 +553,7 @@ export default function CareersPage() {
       {selectedJob && (
 
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-navy/80 backdrop-blur-sm p-4 overflow-y-auto"
+          className="fixed inset-0 z-50 flex justify-center bg-navy/80 backdrop-blur-sm p-4 overflow-y-auto"
           onMouseDown={(e) => {
             if (e.target === e.currentTarget) {
               closeApplication();
@@ -561,7 +561,7 @@ export default function CareersPage() {
           }}
         >
 
-          <div className="bg-white rounded-xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-brandBorder relative my-8">
+          <div className="bg-white rounded-xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-brandBorder relative my-8 h-fit">
 
             {/* CLOSE */}
 
