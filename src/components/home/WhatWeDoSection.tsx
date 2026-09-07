@@ -27,7 +27,7 @@ export const WhatWeDoSection: React.FC = () => {
 
             <p className="text-base text-brandText-secondary leading-relaxed">
               From modern web applications to intelligent automation and business analytics,
-              Nexify IT helps organizations build, optimize and scale their digital
+              The Nexify helps organizations build, optimize and scale their digital
               operations.
             </p>
 

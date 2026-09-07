@@ -70,7 +70,7 @@ export default function AboutPage() {
               <span className="text-green-brand">Your Business</span>
             </h1>
             <p className="mt-5 text-base sm:text-lg text-gray-300 leading-relaxed">
-              Nexify IT is a digital transformation company based in Madurai, Tamil Nadu.
+              The Nexify is a digital transformation company based in Madurai, Tamil Nadu.
               We specialize in custom web applications, business analytics, AI automation,
               and enterprise resource management systems.
             </p>
@@ -129,7 +129,7 @@ export default function AboutPage() {
                 </div>
 
                 <p className="text-sm text-brandText-secondary leading-relaxed">
-                  Located in the cultural and industrial heart of Southern Tamil Nadu, Nexify IT combines regional engineering talent with world-class software standards to serve enterprises across diverse sectors.
+                  Located in the cultural and industrial heart of Southern Tamil Nadu, The Nexify combines regional engineering talent with world-class software standards to serve enterprises across diverse sectors.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 pt-4 border-t border-brandBorder text-xs">
@@ -149,7 +149,7 @@ export default function AboutPage() {
       </section>
 
       {/* Core Principles */}
-      <section className="py-20 lg:py-24 bg-brandBg-secondary border-b border-brandBorder">
+      {/* <section className="py-20 lg:py-24 bg-brandBg-secondary border-b border-brandBorder">
         <Container>
           <SectionHeader
             eyebrow="OUR VALUES"
@@ -178,7 +178,7 @@ export default function AboutPage() {
             ))}
           </div>
         </Container>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <CTASection />

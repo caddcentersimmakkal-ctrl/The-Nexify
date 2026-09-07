@@ -17,7 +17,7 @@ export const ProcessTimeline: React.FC = () => {
         />
 
         {/* 6-Step Grid (Horizontal on Desktop, 2x3 on Tablet, Vertical on Mobile) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-2 relative">
           {processSteps.map((step, index) => (
             <div
               key={step.step}
@@ -47,7 +47,7 @@ export const ProcessTimeline: React.FC = () => {
               </div>
 
               {/* Deliverable pills */}
-              <div className="pt-3 border-t border-brandBorder/60 space-y-1.5">
+              {/* <div className="pt-3 border-t border-brandBorder/60 space-y-1.5">
                 {step.deliverables.map((item) => (
                   <div
                     key={item}
@@ -57,7 +57,7 @@ export const ProcessTimeline: React.FC = () => {
                     <span>{item}</span>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

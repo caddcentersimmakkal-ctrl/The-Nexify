@@ -5,7 +5,7 @@ import { ServiceDetailView } from "@/components/services/ServiceDetailView";
 import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: "Managed Web Hosting & Cloud Infrastructure | Nexify IT",
+  title: "Managed Web Hosting & Cloud Infrastructure | The Nexify",
   description:
     "High-speed cloud VPS, automated SSL security, daily disaster recovery snapshots, and 24/7 server infrastructure management.",
 };

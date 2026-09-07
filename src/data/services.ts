@@ -32,7 +32,7 @@ export const servicesData: ServiceDetail[] = [
     shortDescription:
       "Modern, responsive and high-performance websites and web applications built around your business goals.",
     fullDescription:
-      "Nexify IT crafts enterprise-ready web platforms, customer portals, and high-conversion business websites tailored to scale your operations. We utilize clean architecture, modern frontend frameworks, and robust APIs to ensure optimal speed, security, and search engine visibility.",
+      "The Nexify crafts enterprise-ready web platforms, customer portals, and high-conversion business websites tailored to scale your operations. We utilize clean architecture, modern frontend frameworks, and robust APIs to ensure optimal speed, security, and search engine visibility.",
     iconName: "Code",
     features: [
       "Corporate Websites",
@@ -107,7 +107,7 @@ export const servicesData: ServiceDetail[] = [
     shortDescription:
       "Transform raw business data into meaningful dashboards, reports and actionable insights.",
     fullDescription:
-      "Unlock the true potential of your company's records. Nexify IT cleans, models, and visualizes complex enterprise data into interactive Power BI dashboards, automated MIS reporting pipelines, and real-time operational KPI trackers.",
+      "Unlock the true potential of your company's records. The Nexify cleans, models, and visualizes complex enterprise data into interactive Power BI dashboards, automated MIS reporting pipelines, and real-time operational KPI trackers.",
     iconName: "BarChart3",
     features: [
       "Power BI",
@@ -182,7 +182,7 @@ export const servicesData: ServiceDetail[] = [
     shortDescription:
       "Automate repetitive business processes using AI, intelligent workflows and AI-powered assistants.",
     fullDescription:
-      "Nexify IT empowers enterprises with custom AI assistants, OCR document extraction systems, and multi-step workflow automation. We integrate modern LLMs and intelligent bots directly into your existing communication and operational channels.",
+      "The Nexify empowers enterprises with custom AI assistants, OCR document extraction systems, and multi-step workflow automation. We integrate modern LLMs and intelligent bots directly into your existing communication and operational channels.",
     iconName: "Sparkles",
     features: [
       "AI Assistants",

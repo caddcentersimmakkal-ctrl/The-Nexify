@@ -48,7 +48,7 @@ export const navLinks: NavItem[] = [
       },
     ],
   },
-  { label: "Projects", href: "/projects" },
+  // { label: "Projects", href: "/projects" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];

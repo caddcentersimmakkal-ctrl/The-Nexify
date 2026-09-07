@@ -40,10 +40,10 @@ export const CTASection: React.FC = () => {
             </Button>
 
             <Button
-              href="/contact"
+              href="tel:+919566567588"
               variant="secondary-dark"
               size="lg"
-              icon={<MessageSquare className="w-4 h-4" />}
+              icon={<PhoneCall className="w-4 h-4" />}
               iconPosition="left"
             >
               Talk to Nexify

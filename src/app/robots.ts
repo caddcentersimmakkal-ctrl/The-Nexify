@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://nexifyit.com/sitemap.xml",
+    sitemap: "https://thenexify.com/sitemap.xml",
   };
 }

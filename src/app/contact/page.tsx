@@ -79,10 +79,10 @@ export default function ContactPage() {
                     <div>
                       <span className="font-semibold text-navy block">Direct Email:</span>
                       <a
-                        href="mailto:contact@nexifyit.com"
+                        href="mailto:thenexifymadurai@gmail.com"
                         className="text-green-brand hover:underline font-medium"
                       >
-                        contact@nexifyit.com
+                        thenexifymadurai@gmail.com
                       </a>
                     </div>
                   </div>
@@ -108,7 +108,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <span className="font-semibold text-navy block">Working Hours:</span>
-                      <span>Mon – Sat: 9:00 AM – 6:30 PM (IST)</span>
+                      <span>Mon – Sat: 10:00 AM – 6:00 PM (IST)</span>
                     </div>
                   </div>
                 </div>

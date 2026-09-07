@@ -5,7 +5,7 @@ import { ServiceDetailView } from "@/components/services/ServiceDetailView";
 import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: "Web Development Services | Nexify IT Solutions",
+  title: "Web Development Services | The Nexify",
   description:
     "High-speed websites, custom web applications, e-commerce storefronts, and B2B portals engineered with Next.js, React, and TypeScript.",
 };

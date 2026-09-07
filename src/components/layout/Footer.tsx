@@ -44,14 +44,14 @@ export const Footer: React.FC = () => {
                   About Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/projects"
                   className="text-gray-300 hover:text-green-brand transition-colors inline-flex items-center gap-1"
                 >
                   Projects
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/careers"
@@ -147,10 +147,10 @@ export const Footer: React.FC = () => {
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-green-brand flex-shrink-0" />
                 <a
-                  href="mailto:contact@nexifyit.com"
+                  href="mailto:thenexifymadurai@gmail.com"
                   className="text-gray-300 hover:text-green-brand transition-colors text-xs"
                 >
-                  contact@nexifyit.com
+                  thenexifymadurai@gmail.com
                 </a>
               </div>
 
@@ -166,7 +166,7 @@ export const Footer: React.FC = () => {
 
               <div className="pt-2">
                 <span className="inline-block text-[11px] text-gray-400 bg-white/5 border border-white/10 rounded px-2.5 py-1">
-                  Business Hours: Mon - Sat (9:00 AM - 6:30 PM IST)
+                  Business Hours: Mon - Sat (10:00 AM - 6:00 PM IST)
                 </span>
               </div>
             </div>
@@ -176,7 +176,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar: Copyright & Legal */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
           <div>
-            © {new Date().getFullYear()} Nexify IT. All Rights Reserved.
+            © {new Date().getFullYear()} The Nexify. All Rights Reserved.
           </div>
           <div className="flex items-center gap-6">
             <Link

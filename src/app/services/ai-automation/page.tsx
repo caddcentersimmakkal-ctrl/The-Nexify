@@ -5,7 +5,7 @@ import { ServiceDetailView } from "@/components/services/ServiceDetailView";
 import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: "AI Automation & Intelligent LLM Bots | Nexify IT",
+  title: "AI Automation & Intelligent LLM Bots | The Nexify",
   description:
     "Automate enterprise operations using private LLM assistants, document AI OCR extraction, and multi-step workflow bots.",
 };

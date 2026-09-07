@@ -86,9 +86,9 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
                 <Button href="/contact" variant="primary" size="lg">
                   Request {service.title} Consultation
                 </Button>
-                <Button href="/projects" variant="secondary-dark" size="lg">
+                {/* <Button href="/projects" variant="secondary-dark" size="lg">
                   View Demo Work
-                </Button>
+                </Button> */}
               </div>
             </div>
 

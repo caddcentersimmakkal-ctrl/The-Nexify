@@ -5,7 +5,7 @@ import { ServiceDetailView } from "@/components/services/ServiceDetailView";
 import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: "Custom ERP & CRM Software Development | Nexify IT",
+  title: "Custom ERP & CRM Software Development | The Nexify",
   description:
     "Unify customer pipelines, multi-warehouse inventory, automated GST billing, and operations management through custom ERP software.",
 };

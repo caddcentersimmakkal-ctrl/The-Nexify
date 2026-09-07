@@ -58,75 +58,129 @@ export default function CareersPage() {
   // -----------------------------------------
 
   const openings = [
+    // {
+    //   id: "frontend-dev",
+    //   title: "Frontend Engineer (Next.js / React / TypeScript)",
+    //   department: "Web Development",
+    //   location: "Madurai, Tamil Nadu (On-Site / Hybrid)",
+    //   type: "Full-Time",
+    //   experience: "2+ Years",
+
+    //   summary:
+    //     "Build enterprise-grade web applications, responsive customer portals, and high-conversion corporate websites using Next.js and Tailwind CSS.",
+
+    //   requirements: [
+    //     "Strong proficiency in React, Next.js (App Router), TypeScript, and CSS/Tailwind",
+    //     "Deep understanding of Core Web Vitals, performance profiling, and SEO hierarchy",
+    //     "Experience consuming REST & GraphQL APIs with client caching strategies",
+    //   ],
+    // },
+
+    // {
+    //   id: "ai-python-dev",
+    //   title: "Python & AI Automation Engineer",
+    //   department: "AI & Automation",
+    //   location: "Madurai, Tamil Nadu (On-Site / Hybrid)",
+    //   type: "Full-Time",
+    //   experience: "2+ Years",
+
+    //   summary:
+    //     "Design and deploy intelligent workflow bots, document AI OCR parsers, and custom LLM assistants using FastAPI and LangChain.",
+
+    //   requirements: [
+    //     "Strong backend programming in Python, FastAPI, and asynchronous concurrency",
+    //     "Hands-on experience with OpenAI/Anthropic APIs, vector databases, and embeddings",
+    //     "Experience building automated webhooks and OCR data extraction pipelines",
+    //   ],
+    // },
+
+    // {
+    //   id: "data-analyst",
+    //   title: "Data Analyst & Power BI Specialist",
+    //   department: "Data Analytics",
+    //   location: "Madurai, Tamil Nadu (On-Site / Hybrid)",
+    //   type: "Full-Time",
+    //   experience: "1-3 Years",
+
+    //   summary:
+    //     "Build interactive executive dashboards, optimize complex SQL analytical queries, and automate scheduled MIS reporting workflows.",
+
+    //   requirements: [
+    //     "Advanced proficiency in Power BI, DAX formulas, and data modeling",
+    //     "Strong relational database querying in PostgreSQL / MySQL / SQL Server",
+    //     "Ability to translate complex business metrics into clean visual dashboards",
+    //   ],
+    // },
+
+    // {
+    //   id: "fullstack-erp",
+    //   title: "Full-Stack Engineer (Node.js & PostgreSQL)",
+    //   department: "ERP & CRM",
+    //   location: "Madurai, Tamil Nadu (On-Site / Hybrid)",
+    //   type: "Full-Time",
+    //   experience: "2+ Years",
+
+    //   summary:
+    //     "Architect custom ERP, inventory, and GST billing platforms with granular role-based access control and high database integrity.",
+
+    //   requirements: [
+    //     "Proficiency in Node.js, Express/Nest, PostgreSQL, and Prisma/TypeORM",
+    //     "Experience designing robust database schemas and transactional rollbacks",
+    //     "Knowledge of GST invoicing logic and multi-branch inventory models is a plus",
+    //   ],
+    // },
+
     {
-      id: "frontend-dev",
-      title: "Frontend Engineer (Next.js / React / TypeScript)",
-      department: "Web Development",
+      id: "ui-ux-designer",
+      title: "UI/UX Designer",
+      department: "Design",
       location: "Madurai, Tamil Nadu (On-Site / Hybrid)",
       type: "Full-Time",
       experience: "2+ Years",
 
       summary:
-        "Build enterprise-grade web applications, responsive customer portals, and high-conversion corporate websites using Next.js and Tailwind CSS.",
+        "Design intuitive digital experiences, modern interfaces, and scalable design systems for enterprise applications, websites, and customer-facing products.",
 
       requirements: [
-        "Strong proficiency in React, Next.js (App Router), TypeScript, and CSS/Tailwind",
-        "Deep understanding of Core Web Vitals, performance profiling, and SEO hierarchy",
-        "Experience consuming REST & GraphQL APIs with client caching strategies",
+        "Strong proficiency in Figma, UI design, UX research, wireframing, prototyping, and design systems",
+        "Deep understanding of user-centered design, responsive layouts, accessibility, visual hierarchy, and interaction design",
+        "Experience collaborating with developers and product teams to translate designs into high-quality digital experiences",
       ],
     },
 
     {
-      id: "ai-python-dev",
-      title: "Python & AI Automation Engineer",
-      department: "AI & Automation",
+      id: "mobile-dev",
+      title: "Mobile Application Developer (Flutter / React Native)",
+      department: "Mobile Development",
       location: "Madurai, Tamil Nadu (On-Site / Hybrid)",
       type: "Full-Time",
       experience: "2+ Years",
 
       summary:
-        "Design and deploy intelligent workflow bots, document AI OCR parsers, and custom LLM assistants using FastAPI and LangChain.",
+        "Build scalable, high-performance mobile applications for Android and iOS with seamless user experiences, robust API integrations, and production-ready architecture.",
 
       requirements: [
-        "Strong backend programming in Python, FastAPI, and asynchronous concurrency",
-        "Hands-on experience with OpenAI/Anthropic APIs, vector databases, and embeddings",
-        "Experience building automated webhooks and OCR data extraction pipelines",
+        "Strong proficiency in Flutter or React Native with solid knowledge of Dart or TypeScript",
+        "Experience with REST APIs, authentication, state management, local storage, push notifications, and third-party integrations",
+        "Understanding of mobile performance optimization, responsive UI, app lifecycle, debugging, testing, and Play Store / App Store deployment",
       ],
     },
 
     {
-      id: "data-analyst",
-      title: "Data Analyst & Power BI Specialist",
-      department: "Data Analytics",
-      location: "Madurai, Tamil Nadu (On-Site / Hybrid)",
-      type: "Full-Time",
-      experience: "1-3 Years",
-
-      summary:
-        "Build interactive executive dashboards, optimize complex SQL analytical queries, and automate scheduled MIS reporting workflows.",
-
-      requirements: [
-        "Advanced proficiency in Power BI, DAX formulas, and data modeling",
-        "Strong relational database querying in PostgreSQL / MySQL / SQL Server",
-        "Ability to translate complex business metrics into clean visual dashboards",
-      ],
-    },
-
-    {
-      id: "fullstack-erp",
-      title: "Full-Stack Engineer (Node.js & PostgreSQL)",
-      department: "ERP & CRM",
+      id: "devops-engineer",
+      title: "DevOps Engineer",
+      department: "Cloud & Infrastructure",
       location: "Madurai, Tamil Nadu (On-Site / Hybrid)",
       type: "Full-Time",
       experience: "2+ Years",
 
       summary:
-        "Architect custom ERP, inventory, and GST billing platforms with granular role-based access control and high database integrity.",
+        "Build reliable cloud infrastructure, automate deployment pipelines, and maintain secure, scalable environments for modern web applications and enterprise systems.",
 
       requirements: [
-        "Proficiency in Node.js, Express/Nest, PostgreSQL, and Prisma/TypeORM",
-        "Experience designing robust database schemas and transactional rollbacks",
-        "Knowledge of GST invoicing logic and multi-branch inventory models is a plus",
+        "Strong proficiency in Linux, Git, Docker, CI/CD pipelines, and cloud platforms such as AWS, Azure, or Google Cloud",
+        "Experience with infrastructure automation, containerization, monitoring, logging, networking, and production deployment workflows",
+        "Understanding of cloud security, system reliability, performance optimization, backup strategies, and automated deployment processes",
       ],
     },
   ];
@@ -207,7 +261,7 @@ export default function CareersPage() {
       if (!response.ok || !result.success) {
         throw new Error(
           result.message ||
-            "Unable to submit your application."
+          "Unable to submit your application."
         );
       }
 
@@ -790,7 +844,7 @@ export default function CareersPage() {
 
                 <p className="text-center text-[10px] text-gray-400 pt-1">
                   Your information will be sent securely to
-                  the Nexify IT recruitment team.
+                  the The Nexify recruitment team.
                 </p>
 
               </form>

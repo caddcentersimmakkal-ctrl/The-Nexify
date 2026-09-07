@@ -86,7 +86,7 @@ export const Navbar: React.FC = () => {
       )}
     >
       <Container className="h-full flex items-center justify-between">
-        {/* Left: NEXIFY IT Logo */}
+        {/* Left: The Nexify Logo */}
         <Logo />
 
         {/* Center/Right: Desktop Navigation Links */}
@@ -286,7 +286,7 @@ export const Navbar: React.FC = () => {
               </div>
             </div>
 
-            <Link
+            {/* <Link
               href="/projects"
               className={clsx(
                 "px-3 py-2 text-base font-semibold rounded-md",
@@ -296,7 +296,7 @@ export const Navbar: React.FC = () => {
               )}
             >
               Projects
-            </Link>
+            </Link> */}
 
             <Link
               href="/careers"

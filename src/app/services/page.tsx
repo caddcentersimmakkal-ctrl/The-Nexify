@@ -19,9 +19,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Core Technology Services | Nexify IT Solutions",
+  title: "Core Technology Services | The Nexify",
   description:
-    "Explore Nexify IT's 5 core software services: Web Development, Data Analytics, AI Automation, ERP & CRM, and Web Hosting & Cloud.",
+    "Explore The Nexify's 5 core software services: Web Development, Data Analytics, AI Automation, ERP & CRM, and Web Hosting & Cloud.",
 };
 
 export default function ServicesPage() {
@@ -97,9 +97,9 @@ export default function ServicesPage() {
                         </div>
                       </div>
 
-                      <p className="text-sm sm:text-base text-brandText-secondary leading-relaxed">
+                      {/* <p className="text-sm sm:text-base text-brandText-secondary leading-relaxed">
                         {service.fullDescription}
-                      </p>
+                      </p> */}
 
                       {/* Capabilities grid */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
@@ -114,9 +114,9 @@ export default function ServicesPage() {
                                 {cap.metrics}
                               </span>
                             </div>
-                            <p className="text-[11px] text-brandText-secondary leading-snug">
+                            {/* <p className="text-[11px] text-brandText-secondary leading-snug">
                               {cap.description}
-                            </p>
+                            </p> */}
                           </div>
                         ))}
                       </div>

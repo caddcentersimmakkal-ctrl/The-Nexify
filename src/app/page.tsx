@@ -21,10 +21,10 @@ export default function HomePage() {
       <StatsStrip />
 
       {/* 4. Featured Projects (4-column grid with live UI previews & filters) */}
-      <FeaturedProjects />
+      {/* <FeaturedProjects /> */}
 
       {/* 5. About Nexify IT Section (2 columns with 3 core pillars) */}
-      <AboutSection />
+      {/* <AboutSection /> */}
 
       {/* 6. Technology Stack (Subtle badge grid) */}
       <TechStackSection />

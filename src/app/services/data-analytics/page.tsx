@@ -5,7 +5,7 @@ import { ServiceDetailView } from "@/components/services/ServiceDetailView";
 import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: "Data Analytics & Power BI Dashboards | Nexify IT",
+  title: "Data Analytics & Power BI Dashboards | The Nexify",
   description:
     "Transform enterprise data into actionable Power BI dashboards, automated SQL ETL pipelines, and executive MIS reports.",
 };
