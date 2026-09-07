@@ -79,10 +79,7 @@ export const Navbar: React.FC = () => {
   return (
     <header
       className={clsx(
-        "sticky top-0 z-50 w-full bg-white transition-all duration-200 border-b",
-        isScrolled
-          ? "h-18 shadow-header border-brandBorder"
-          : "h-20 border-brandBorder/80"
+        "sticky top-0 z-50 w-full bg-white transition-all duration-200 border-b h-20 border-brandBorder/80"
       )}
     >
       <Container className="h-full flex items-center justify-between">
