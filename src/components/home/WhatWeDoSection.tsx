@@ -380,7 +380,7 @@ export const WhatWeDoSection: React.FC = () => {
                           group-hover:shadow-green-brand/20
                         "
                       >
-                        {renderServiceIcon(service.icon)}
+                        {renderServiceIcon(service.iconName)}
                       </div>
 
                       {/* ARROW */}
@@ -427,7 +427,7 @@ export const WhatWeDoSection: React.FC = () => {
                         </h3>
 
                         <p className="mt-3 text-[11px] leading-5 text-brandText-secondary">
-                          {service.description}
+                          {service.shortDescription}
                         </p>
                       </div>
 
