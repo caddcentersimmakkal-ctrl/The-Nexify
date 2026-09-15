@@ -648,6 +648,11 @@ export const HeroSection: React.FC = () => {
                             : "border-white/10 bg-[#061f3d]/75"
                         }
                       `}
+
+                      style={{
+                        borderRadius: "100px",
+                        width: "fit-content",
+                        }}
                     >
 
                       {/* Scan highlight */}

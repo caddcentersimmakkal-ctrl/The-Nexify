@@ -7,7 +7,6 @@ import { processSteps } from "@/data/process";
 import {
   Check,
   ArrowRight,
-  Sparkles,
   MousePointer2,
 } from "lucide-react";
 
@@ -65,20 +64,24 @@ export const ProcessTimeline: React.FC = () => {
 
         <div className="relative">
 
-          {/* ---------------------------------------------------------
-              CHARACTER + SPEECH BUBBLE
-          --------------------------------------------------------- */}
+
+          {/* =======================================================
+              NEXIFY AI GUIDE
+          ======================================================= */}
 
           <div
             className="
-              hidden lg:block
+              hidden
+              lg:block
               absolute
-              -top-[108px]
+              -top-[118px]
               left-0
               z-30
               w-[calc(16.666%)]
               pointer-events-none
-              transition-all duration-700 ease-[cubic-bezier(.22,1,.36,1)]
+              transition-all
+              duration-700
+              ease-[cubic-bezier(.22,1,.36,1)]
             "
             style={{
               transform: `translateX(${activeStep * 100}%)`,
@@ -87,22 +90,98 @@ export const ProcessTimeline: React.FC = () => {
 
             <div className="flex flex-col items-center">
 
-              {/* Speech bubble */}
-              <div className="relative mb-3 w-[170px] rounded-2xl border border-slate-200 bg-white px-4 py-3 text-center shadow-[0_10px_35px_rgba(15,23,42,0.10)]">
 
-                <div className="mb-1 flex items-center justify-center gap-1.5">
+              {/* =================================================
+                  SPEECH BUBBLE
+              ================================================= */}
 
-                  <Sparkles className="h-3 w-3 text-green-brand" />
+              <div
+                className="
+                  relative
+                  mb-3
+                  w-[178px]
+                  rounded-2xl
+                  border
+                  border-slate-200
+                  bg-white
+                  px-4
+                  py-3
+                  text-center
+                  shadow-[0_10px_35px_rgba(15,23,42,0.10)]
+                "
+              >
 
-                  <span className="text-[9px] font-bold uppercase tracking-widest text-green-brand">
-                    NEXIFY GUIDE
+                {/* AI Guide label */}
+                <div className="mb-1.5 flex items-center justify-center gap-1.5">
+
+                  <div className="relative flex h-3 w-3 items-center justify-center">
+
+                    <span
+                      className="
+                        absolute
+                        h-2.5
+                        w-2.5
+                        animate-pulse
+                        rounded-full
+                        bg-green-brand/20
+                      "
+                    />
+
+                    <span
+                      className="
+                        relative
+                        h-1.5
+                        w-1.5
+                        rounded-full
+                        bg-green-brand
+                        shadow-[0_0_7px_rgba(69,182,73,0.8)]
+                      "
+                    />
+
+                  </div>
+
+                  <span
+                    className="
+                      text-[9px]
+                      font-bold
+                      uppercase
+                      tracking-[0.16em]
+                      text-green-brand
+                    "
+                  >
+                    THE NEXIFY AI GUIDE
                   </span>
 
                 </div>
 
-                <p className="text-[11px] font-bold text-navy">
+
+                {/* Guide message */}
+                <p
+                  className="
+                    text-[11px]
+                    font-bold
+                    leading-relaxed
+                    text-navy
+                  "
+                >
                   {getGuideMessage(activeStep)}
                 </p>
+
+
+                {/* Technical ID */}
+                {/* <div
+                  className="
+                    mt-2
+                    font-mono
+                    text-[7px]
+                    uppercase
+                    tracking-widest
+                    text-slate-300
+                  "
+                >
+                  AI_GUIDE / ACTIVE
+                </div> */}
+
 
                 {/* Bubble pointer */}
                 <div
@@ -125,60 +204,413 @@ export const ProcessTimeline: React.FC = () => {
 
 
               {/* =================================================
-                  CHARACTER
+                  PROFESSIONAL AI ROBOT
               ================================================= */}
 
-              <div className="relative h-[62px] w-[54px]">
+              <div
+                className="
+                  relative
+                  h-[78px]
+                  w-[68px]
+                "
+              >
 
-                {/* Shadow */}
-                <div className="absolute bottom-0 left-1/2 h-2 w-10 -translate-x-1/2 rounded-full bg-navy/10 blur-sm" />
+                {/* =================================================
+                    GROUND SHADOW
+                ================================================= */}
 
-
-                {/* Body */}
-                <div className="absolute bottom-1 left-1/2 h-8 w-7 -translate-x-1/2 rounded-t-xl rounded-b-lg border border-navy/20 bg-navy shadow-md">
-
-                  {/* Shirt accent */}
-                  <div className="absolute left-1/2 top-2 h-1.5 w-3 -translate-x-1/2 rounded-full bg-green-brand" />
-
-                </div>
-
-
-                {/* Head */}
-                <div className="absolute left-1/2 top-1 h-8 w-8 -translate-x-1/2 rounded-full border-2 border-navy/20 bg-white shadow-sm">
-
-                  {/* Hair */}
-                  <div className="absolute -top-1 left-1/2 h-2.5 w-6 -translate-x-1/2 rounded-t-full bg-navy" />
-
-                  {/* Eyes */}
-                  <div className="absolute left-[7px] top-[13px] h-1 w-1 rounded-full bg-navy" />
-
-                  <div className="absolute right-[7px] top-[13px] h-1 w-1 rounded-full bg-navy" />
-
-                  {/* Smile */}
-                  <div className="absolute left-1/2 top-[19px] h-1 w-2 -translate-x-1/2 rounded-b-full border-b border-navy" />
-
-                </div>
-
-
-                {/* Pointing arm */}
                 <div
                   className="
                     absolute
-                    right-[-5px]
-                    top-[30px]
+                    bottom-0
+                    left-1/2
                     h-2
-                    w-7
-                    origin-left
-                    rotate-[-15deg]
+                    w-12
+                    -translate-x-1/2
                     rounded-full
-                    bg-navy
+                    bg-navy/15
+                    blur-md
+                  "
+                />
+
+
+                {/* =================================================
+                    ROBOT BODY
+                ================================================= */}
+
+                <div
+                  className="
+                    absolute
+                    bottom-2
+                    left-1/2
+                    h-[38px]
+                    w-[34px]
+                    -translate-x-1/2
+                    rounded-[10px]
+                    border
+                    border-slate-300
+                    bg-gradient-to-b
+                    from-slate-100
+                    via-white
+                    to-slate-200
+                    shadow-[0_5px_15px_rgba(15,23,42,0.18)]
                   "
                 >
 
-                  {/* Hand */}
-                  <div className="absolute -right-1 -top-1 h-3 w-3 rounded-full bg-white border border-navy/20" />
+                  {/* Chest panel */}
+                  <div
+                    className="
+                      absolute
+                      left-1/2
+                      top-[9px]
+                      h-[15px]
+                      w-[20px]
+                      -translate-x-1/2
+                      rounded-md
+                      border
+                      border-slate-300
+                      bg-navy
+                      shadow-inner
+                    "
+                  >
+
+                    {/* AI status light */}
+                    <div
+                      className="
+                        absolute
+                        left-1/2
+                        top-1/2
+                        h-1.5
+                        w-1.5
+                        -translate-x-1/2
+                        -translate-y-1/2
+                        rounded-full
+                        bg-green-brand
+                        shadow-[0_0_8px_rgba(69,182,73,0.8)]
+                      "
+                    />
+
+                    {/* Data lines */}
+                    <div
+                      className="
+                        absolute
+                        left-2
+                        top-2
+                        h-px
+                        w-2
+                        bg-cyan-tech/70
+                      "
+                    />
+
+                    <div
+                      className="
+                        absolute
+                        right-2
+                        top-2
+                        h-px
+                        w-2
+                        bg-cyan-tech/70
+                      "
+                    />
+
+                  </div>
+
+
+                  {/* Left shoulder */}
+                  <div
+                    className="
+                      absolute
+                      -left-[5px]
+                      top-[5px]
+                      h-5
+                      w-2
+                      rounded-full
+                      border
+                      border-slate-300
+                      bg-slate-200
+                    "
+                  />
+
+
+                  {/* Right shoulder */}
+                  <div
+                    className="
+                      absolute
+                      -right-[5px]
+                      top-[5px]
+                      h-5
+                      w-2
+                      rounded-full
+                      border
+                      border-slate-300
+                      bg-slate-200
+                    "
+                  />
 
                 </div>
+
+
+                {/* =================================================
+                    ROBOT NECK
+                ================================================= */}
+
+                <div
+                  className="
+                    absolute
+                    left-1/2
+                    top-[25px]
+                    h-3
+                    w-3
+                    -translate-x-1/2
+                    rounded-sm
+                    bg-slate-400
+                  "
+                />
+
+
+                {/* =================================================
+                    ROBOT HEAD
+                ================================================= */}
+
+                <div
+                  className="
+                    absolute
+                    left-1/2
+                    top-0
+                    h-[34px]
+                    w-[42px]
+                    -translate-x-1/2
+                    rounded-[12px]
+                    border
+                    border-slate-300
+                    bg-gradient-to-b
+                    from-white
+                    via-slate-100
+                    to-slate-200
+                    shadow-[0_6px_18px_rgba(15,23,42,0.18)]
+                  "
+                >
+
+                  {/* Dark face display */}
+                  <div
+                    className="
+                      absolute
+                      left-1/2
+                      top-[7px]
+                      h-[16px]
+                      w-[29px]
+                      -translate-x-1/2
+                      overflow-hidden
+                      rounded-[7px]
+                      border
+                      border-slate-700
+                      bg-[#071525]
+                      shadow-inner
+                    "
+                  >
+
+                    {/* Scanning line */}
+                    <div
+                      className="
+                        absolute
+                        left-0
+                        top-1/2
+                        h-px
+                        w-full
+                        bg-cyan-tech/20
+                      "
+                    />
+
+
+                    {/* Left AI eye */}
+                    <div
+                      className="
+                        absolute
+                        left-[7px]
+                        top-[6px]
+                        h-1.5
+                        w-1.5
+                        rounded-full
+                        bg-cyan-tech
+                        shadow-[0_0_7px_rgba(0,168,198,0.9)]
+                        animate-pulse
+                      "
+                    />
+
+
+                    {/* Right AI eye */}
+                    <div
+                      className="
+                        absolute
+                        right-[7px]
+                        top-[6px]
+                        h-1.5
+                        w-1.5
+                        rounded-full
+                        bg-cyan-tech
+                        shadow-[0_0_7px_rgba(0,168,198,0.9)]
+                        animate-pulse
+                      "
+                    />
+
+                  </div>
+
+
+                  {/* Head top sensor */}
+                  <div
+                    className="
+                      absolute
+                      left-1/2
+                      -top-[5px]
+                      h-2
+                      w-6
+                      -translate-x-1/2
+                      rounded-full
+                      border
+                      border-slate-300
+                      bg-slate-100
+                    "
+                  />
+
+
+                  {/* Green status LED */}
+                  <div
+                    className="
+                      absolute
+                      right-[5px]
+                      top-[5px]
+                      h-1.5
+                      w-1.5
+                      rounded-full
+                      bg-green-brand
+                      shadow-[0_0_6px_rgba(69,182,73,0.9)]
+                    "
+                  />
+
+                </div>
+
+
+                {/* =================================================
+                    ANTENNA
+                ================================================= */}
+
+                <div
+                  className="
+                    absolute
+                    left-1/2
+                    -top-[9px]
+                    h-3
+                    w-px
+                    -translate-x-1/2
+                    bg-slate-400
+                  "
+                />
+
+                <div
+                  className="
+                    absolute
+                    left-1/2
+                    -top-[12px]
+                    h-2
+                    w-2
+                    -translate-x-1/2
+                    rounded-full
+                    border
+                    border-green-brand/40
+                    bg-green-brand
+                    shadow-[0_0_8px_rgba(69,182,73,0.8)]
+                  "
+                />
+
+
+                {/* =================================================
+                    RIGHT ROBOT ARM
+                ================================================= */}
+
+                <div
+                  className="
+                    absolute
+                    right-[-8px]
+                    top-[39px]
+                    h-[5px]
+                    w-[23px]
+                    origin-left
+                    rotate-[-18deg]
+                    rounded-full
+                    bg-gradient-to-r
+                    from-slate-400
+                    to-slate-200
+                    shadow-sm
+                  "
+                >
+
+                  {/* Elbow joint */}
+                  <div
+                    className="
+                      absolute
+                      left-[-3px]
+                      top-[-2px]
+                      h-2.5
+                      w-2.5
+                      rounded-full
+                      border
+                      border-slate-400
+                      bg-white
+                    "
+                  />
+
+
+                  {/* Robotic hand */}
+                  <div
+                    className="
+                      absolute
+                      -right-[4px]
+                      -top-[3px]
+                      h-3
+                      w-3
+                      rounded-full
+                      border
+                      border-slate-400
+                      bg-white
+                      shadow-sm
+                    "
+                  />
+
+
+                  {/* Pointer finger */}
+                  <div
+                    className="
+                      absolute
+                      -right-[8px]
+                      top-[-1px]
+                      h-1.5
+                      w-2
+                      rounded-full
+                      bg-slate-300
+                    "
+                  />
+
+                </div>
+
+
+                {/* =================================================
+                    LEFT ROBOT ARM
+                ================================================= */}
+
+                <div
+                  className="
+                    absolute
+                    left-[-5px]
+                    top-[40px]
+                    h-[5px]
+                    w-[16px]
+                    rotate-[12deg]
+                    rounded-full
+                    bg-gradient-to-r
+                    from-slate-300
+                    to-slate-400
+                  "
+                />
 
               </div>
 
@@ -194,7 +626,19 @@ export const ProcessTimeline: React.FC = () => {
           <div className="relative">
 
             {/* Desktop connecting line */}
-            <div className="absolute left-[8.33%] right-[8.33%] top-[28px] hidden h-[2px] bg-slate-200 lg:block" />
+            <div
+              className="
+                absolute
+                left-[8.33%]
+                right-[8.33%]
+                top-[28px]
+                hidden
+                h-[2px]
+                bg-slate-200
+                lg:block
+              "
+            />
+
 
             {/* Active line */}
             <div
@@ -218,14 +662,34 @@ export const ProcessTimeline: React.FC = () => {
 
 
             {/* Mobile / tablet line */}
-            <div className="absolute left-[28px] top-8 bottom-8 w-px bg-slate-200 md:hidden" />
+            <div
+              className="
+                absolute
+                bottom-8
+                left-[28px]
+                top-8
+                w-px
+                bg-slate-200
+                md:hidden
+              "
+            />
 
 
             {/* =====================================================
                 PROCESS GRID
             ===================================================== */}
 
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 lg:gap-3">
+            <div
+              className="
+                grid
+                grid-cols-1
+                gap-4
+                md:grid-cols-2
+                lg:grid-cols-3
+                xl:grid-cols-6
+                lg:gap-3
+              "
+            >
 
               {processSteps.map((step, index) => {
 
@@ -238,11 +702,25 @@ export const ProcessTimeline: React.FC = () => {
                     onMouseEnter={() => setActiveStep(index)}
                   >
 
-                    {/* Timeline node */}
-                    <div className="relative z-20 mb-6 flex h-[58px] items-center justify-center">
+                    {/* =================================================
+                        TIMELINE NODE
+                    ================================================= */}
+
+                    <div
+                      className="
+                        relative
+                        z-20
+                        mb-6
+                        flex
+                        h-[58px]
+                        items-center
+                        justify-center
+                      "
+                    >
 
                       <button
                         onClick={() => setActiveStep(index)}
+                        aria-label={`Select process step ${index + 1}`}
                         className={`
                           relative
                           flex
@@ -254,9 +732,10 @@ export const ProcessTimeline: React.FC = () => {
                           border-4
                           transition-all
                           duration-500
+
                           ${
                             isActive
-                              ? "border-green-brand bg-navy text-white shadow-[0_0_0_7px_rgba(34,197,94,0.10),0_10px_30px_rgba(15,23,42,0.18)] scale-110"
+                              ? "scale-110 border-green-brand bg-navy text-white shadow-[0_0_0_7px_rgba(34,197,94,0.10),0_10px_30px_rgba(15,23,42,0.18)]"
                               : "border-white bg-white text-slate-400 shadow-md hover:border-green-brand/30 hover:text-green-brand"
                           }
                         `}
@@ -267,9 +746,18 @@ export const ProcessTimeline: React.FC = () => {
                         </span>
 
 
-                        {/* Pulse */}
+                        {/* Active pulse */}
                         {isActive && (
-                          <span className="absolute inset-[-7px] animate-ping rounded-full border border-green-brand/20" />
+                          <span
+                            className="
+                              absolute
+                              inset-[-7px]
+                              animate-ping
+                              rounded-full
+                              border
+                              border-green-brand/20
+                            "
+                          />
                         )}
 
                       </button>
@@ -295,6 +783,7 @@ export const ProcessTimeline: React.FC = () => {
                         text-left
                         transition-all
                         duration-500
+
                         ${
                           isActive
                             ? "border-green-brand/40 -translate-y-1 shadow-[0_18px_40px_rgba(15,23,42,0.10)]"
@@ -306,22 +795,34 @@ export const ProcessTimeline: React.FC = () => {
                       {/* Top gradient */}
                       <div
                         className={`
-                          absolute left-0 right-0 top-0 h-[3px]
+                          absolute
+                          left-0
+                          right-0
+                          top-0
+                          h-[3px]
                           bg-gradient-to-r
                           from-green-brand
                           to-cyan-tech
-                          transition-opacity duration-300
+                          transition-opacity
+                          duration-300
+
                           ${isActive ? "opacity-100" : "opacity-0"}
                         `}
                       />
 
 
-                      {/* Step number */}
+                      {/* =================================================
+                          STEP NUMBER
+                      ================================================= */}
+
                       <div className="mb-5 flex items-center justify-between">
 
                         <span
                           className={`
-                            font-mono text-[10px] font-bold
+                            font-mono
+                            text-[10px]
+                            font-bold
+
                             ${
                               isActive
                                 ? "text-green-brand"
@@ -332,10 +833,14 @@ export const ProcessTimeline: React.FC = () => {
                           PROCESS / {String(index + 1).padStart(2, "0")}
                         </span>
 
+
                         <ArrowRight
                           className={`
-                            h-3.5 w-3.5
-                            transition-all duration-300
+                            h-3.5
+                            w-3.5
+                            transition-all
+                            duration-300
+
                             ${
                               isActive
                                 ? "translate-x-1 text-green-brand"
@@ -347,11 +852,18 @@ export const ProcessTimeline: React.FC = () => {
                       </div>
 
 
-                      {/* Title */}
+                      {/* =================================================
+                          TITLE
+                      ================================================= */}
+
                       <h3
                         className={`
-                          text-base font-extrabold tracking-tight
-                          transition-colors duration-300
+                          text-base
+                          font-extrabold
+                          tracking-tight
+                          transition-colors
+                          duration-300
+
                           ${
                             isActive
                               ? "text-navy"
@@ -363,10 +875,18 @@ export const ProcessTimeline: React.FC = () => {
                       </h3>
 
 
-                      {/* Subtitle */}
+                      {/* =================================================
+                          SUBTITLE
+                      ================================================= */}
+
                       <div
                         className={`
-                          mt-1.5 text-[9px] font-bold uppercase tracking-[0.12em]
+                          mt-1.5
+                          text-[9px]
+                          font-bold
+                          uppercase
+                          tracking-[0.12em]
+
                           ${
                             isActive
                               ? "text-cyan-tech"
@@ -378,13 +898,27 @@ export const ProcessTimeline: React.FC = () => {
                       </div>
 
 
-                      {/* Description */}
-                      <p className="mt-3 min-h-[58px] text-[11px] leading-relaxed text-brandText-secondary">
+                      {/* =================================================
+                          DESCRIPTION
+                      ================================================= */}
+
+                      <p
+                        className="
+                          mt-3
+                          min-h-[58px]
+                          text-[11px]
+                          leading-relaxed
+                          text-brandText-secondary
+                        "
+                      >
                         {step.description}
                       </p>
 
 
-                      {/* Deliverables */}
+                      {/* =================================================
+                          DELIVERABLES
+                      ================================================= */}
+
                       <div
                         className={`
                           mt-4
@@ -392,6 +926,7 @@ export const ProcessTimeline: React.FC = () => {
                           pt-4
                           transition-all
                           duration-500
+
                           ${
                             isActive
                               ? "border-green-brand/15"
@@ -401,15 +936,26 @@ export const ProcessTimeline: React.FC = () => {
                       >
 
                         {step.deliverables?.slice(0, 2).map((item) => (
+
                           <div
                             key={item}
-                            className="mb-1.5 flex items-start gap-1.5 text-[9px] text-slate-500"
+                            className="
+                              mb-1.5
+                              flex
+                              items-start
+                              gap-1.5
+                              text-[9px]
+                              text-slate-500
+                            "
                           >
+
                             <Check
                               className={`
                                 mt-0.5
-                                h-3 w-3
+                                h-3
+                                w-3
                                 shrink-0
+
                                 ${
                                   isActive
                                     ? "text-green-brand"
@@ -419,23 +965,38 @@ export const ProcessTimeline: React.FC = () => {
                             />
 
                             <span>{item}</span>
+
                           </div>
+
                         ))}
 
                       </div>
 
 
-                      {/* Bottom active indicator */}
-                      <div className="mt-4 h-1 overflow-hidden rounded-full bg-slate-100">
+                      {/* =================================================
+                          ACTIVE INDICATOR
+                      ================================================= */}
+
+                      <div
+                        className="
+                          mt-4
+                          h-1
+                          overflow-hidden
+                          rounded-full
+                          bg-slate-100
+                        "
+                      >
 
                         <div
                           className={`
-                            h-full rounded-full
+                            h-full
+                            rounded-full
                             bg-gradient-to-r
                             from-green-brand
                             to-cyan-tech
                             transition-all
                             duration-700
+
                             ${
                               isActive
                                 ? "w-full"
@@ -461,23 +1022,68 @@ export const ProcessTimeline: React.FC = () => {
               CURRENT STEP INFO
           ========================================================= */}
 
-          <div className="mt-8 flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:flex-row sm:items-center sm:justify-between">
+          <div
+            className="
+              mt-8
+              flex
+              flex-col
+              gap-4
+              rounded-2xl
+              border
+              border-slate-200
+              bg-white
+              p-5
+              shadow-sm
+              sm:flex-row
+              sm:items-center
+              sm:justify-between
+            "
+          >
 
+            {/* Current stage */}
             <div className="flex items-center gap-4">
 
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-green-brand/10 text-green-brand">
+              <div
+                className="
+                  flex
+                  h-10
+                  w-10
+                  shrink-0
+                  items-center
+                  justify-center
+                  rounded-xl
+                  bg-green-brand/10
+                  text-green-brand
+                "
+              >
 
                 <MousePointer2 className="h-4 w-4" />
 
               </div>
 
+
               <div>
 
-                <p className="text-[9px] font-bold uppercase tracking-widest text-green-brand">
+                <p
+                  className="
+                    text-[9px]
+                    font-bold
+                    uppercase
+                    tracking-widest
+                    text-green-brand
+                  "
+                >
                   CURRENT STAGE
                 </p>
 
-                <p className="mt-0.5 text-sm font-bold text-navy">
+                <p
+                  className="
+                    mt-0.5
+                    text-sm
+                    font-bold
+                    text-navy
+                  "
+                >
                   {currentStep.title}
                 </p>
 
@@ -486,16 +1092,21 @@ export const ProcessTimeline: React.FC = () => {
             </div>
 
 
+            {/* Step indicators */}
             <div className="flex items-center gap-2">
 
               {processSteps.map((_, index) => (
+
                 <button
                   key={index}
                   onClick={() => setActiveStep(index)}
                   aria-label={`Go to process step ${index + 1}`}
                   className={`
-                    h-1.5 rounded-full
-                    transition-all duration-300
+                    h-1.5
+                    rounded-full
+                    transition-all
+                    duration-300
+
                     ${
                       activeStep === index
                         ? "w-8 bg-green-brand"
@@ -503,6 +1114,7 @@ export const ProcessTimeline: React.FC = () => {
                     }
                   `}
                 />
+
               ))}
 
             </div>
@@ -512,6 +1124,7 @@ export const ProcessTimeline: React.FC = () => {
         </div>
 
       </Container>
+
     </section>
   );
 };
@@ -522,6 +1135,7 @@ export const ProcessTimeline: React.FC = () => {
 ============================================================= */
 
 function getGuideMessage(index: number) {
+
   const messages = [
     "Let's understand your idea.",
     "Now we define the right solution.",
