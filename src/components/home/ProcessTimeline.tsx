@@ -16,7 +16,7 @@ export const ProcessTimeline: React.FC = () => {
   const currentStep = processSteps[activeStep];
 
   return (
-    <section className="relative overflow-hidden border-b border-brandBorder bg-[#f7fafc] py-20 font-sans lg:py-28">
+    <section className="relative overflow-hidden border-b border-brandBorder bg-[#f7fafc] py-20 font-sans">
 
       {/* =========================================================
           BACKGROUND

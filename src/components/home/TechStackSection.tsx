@@ -305,7 +305,7 @@ export const TechStackSection: React.FC = () => {
   ========================================================= */
 
   return (
-    <section className="relative overflow-hidden border-b border-brandBorder bg-[#f8fafc] py-20 font-sans lg:py-28">
+    <section className="relative overflow-hidden border-b border-brandBorder bg-[#f8fafc] py-20 font-sans">
 
       {/* =====================================================
           BACKGROUND

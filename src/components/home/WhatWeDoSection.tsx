@@ -118,7 +118,7 @@ export const WhatWeDoSection: React.FC = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#f7faf9] py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-[#f7faf9] py-20">
       {/* =========================================================
           LIGHT PREMIUM BACKGROUND
       ========================================================= */}
@@ -251,9 +251,9 @@ export const WhatWeDoSection: React.FC = () => {
                   />
                 </div>
 
-                <span className="font-mono text-[9px] font-bold tracking-[0.25em] text-slate-400">
+                {/* <span className="font-mono text-[9px] font-bold tracking-[0.25em] text-slate-400">
                   NXF / CORE
-                </span>
+                </span> */}
               </div>
 
               {/* Content */}
@@ -444,7 +444,7 @@ export const WhatWeDoSection: React.FC = () => {
                   {/* Main content */}
                   <div className="mt-7 max-w-[62%]">
 
-                    <h3 className="text-[19px] font-extrabold leading-tight tracking-tight text-navy">
+                    <h3 className="text-[20px] font-extrabold leading-tight tracking-tight text-navy">
                       {service.title}
                     </h3>
 
@@ -522,9 +522,9 @@ export const WhatWeDoSection: React.FC = () => {
                               flex
                               items-center
                               gap-2
-                              text-[9px]
+                              text-[13px]
                               leading-4
-                              text-slate-500
+                              text-brandText-secondary
                             "
                           >
                             <span

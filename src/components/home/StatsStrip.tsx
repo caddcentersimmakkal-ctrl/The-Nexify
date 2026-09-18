@@ -79,7 +79,7 @@ export const StatsStrip: React.FC = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-brandBg-secondary py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-brandBg-secondary">
       {/* =========================================================
           BACKGROUND
       ========================================================= */}

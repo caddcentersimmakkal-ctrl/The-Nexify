@@ -110,9 +110,9 @@ export const servicesData: ServiceDetail[] = [
       "Unlock the true potential of your company's records. The Nexify cleans, models, and visualizes complex enterprise data into interactive Power BI dashboards, automated MIS reporting pipelines, and real-time operational KPI trackers.",
     iconName: "BarChart3",
     features: [
-      "Power BI",
-      "SQL Analytics",
       "Business Dashboards",
+      "SQL Analytics",
+      "Power BI",
       "MIS Automation",
     ],
     capabilities: [
