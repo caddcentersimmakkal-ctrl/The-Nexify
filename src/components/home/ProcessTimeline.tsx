@@ -733,10 +733,9 @@ export const ProcessTimeline: React.FC = () => {
                           transition-all
                           duration-500
 
-                          ${
-                            isActive
-                              ? "scale-110 border-green-brand bg-navy text-white shadow-[0_0_0_7px_rgba(34,197,94,0.10),0_10px_30px_rgba(15,23,42,0.18)]"
-                              : "border-white bg-white text-slate-400 shadow-md hover:border-green-brand/30 hover:text-green-brand"
+                          ${isActive
+                            ? "scale-110 border-green-brand bg-navy text-white shadow-[0_0_0_7px_rgba(34,197,94,0.10),0_10px_30px_rgba(15,23,42,0.18)]"
+                            : "border-white bg-white text-slate-400 shadow-md hover:border-green-brand/30 hover:text-green-brand"
                           }
                         `}
                       >
@@ -784,10 +783,9 @@ export const ProcessTimeline: React.FC = () => {
                         transition-all
                         duration-500
 
-                        ${
-                          isActive
-                            ? "border-green-brand/40 -translate-y-1 shadow-[0_18px_40px_rgba(15,23,42,0.10)]"
-                            : "border-slate-200 hover:-translate-y-1 hover:border-green-brand/20 hover:shadow-lg"
+                        ${isActive
+                          ? "border-green-brand/40 -translate-y-1 shadow-[0_18px_40px_rgba(15,23,42,0.10)]"
+                          : "border-slate-200 hover:-translate-y-1 hover:border-green-brand/20 hover:shadow-lg"
                         }
                       `}
                     >
@@ -823,10 +821,9 @@ export const ProcessTimeline: React.FC = () => {
                             text-[10px]
                             font-bold
 
-                            ${
-                              isActive
-                                ? "text-green-brand"
-                                : "text-slate-300"
+                            ${isActive
+                              ? "text-green-brand"
+                              : "text-slate-300"
                             }
                           `}
                         >
@@ -841,10 +838,9 @@ export const ProcessTimeline: React.FC = () => {
                             transition-all
                             duration-300
 
-                            ${
-                              isActive
-                                ? "translate-x-1 text-green-brand"
-                                : "text-slate-300"
+                            ${isActive
+                              ? "translate-x-1 text-green-brand"
+                              : "text-slate-300"
                             }
                           `}
                         />
@@ -864,10 +860,9 @@ export const ProcessTimeline: React.FC = () => {
                           transition-colors
                           duration-300
 
-                          ${
-                            isActive
-                              ? "text-navy"
-                              : "text-slate-700"
+                          ${isActive
+                            ? "text-navy"
+                            : "text-slate-700"
                           }
                         `}
                       >
@@ -887,10 +882,9 @@ export const ProcessTimeline: React.FC = () => {
                           uppercase
                           tracking-[0.12em]
 
-                          ${
-                            isActive
-                              ? "text-cyan-tech"
-                              : "text-slate-400"
+                          ${isActive
+                            ? "text-cyan-tech"
+                            : "text-slate-400"
                           }
                         `}
                       >
@@ -927,10 +921,9 @@ export const ProcessTimeline: React.FC = () => {
                           transition-all
                           duration-500
 
-                          ${
-                            isActive
-                              ? "border-green-brand/15"
-                              : "border-slate-100"
+                          ${isActive
+                            ? "border-green-brand/15"
+                            : "border-slate-100"
                           }
                         `}
                       >
@@ -956,10 +949,9 @@ export const ProcessTimeline: React.FC = () => {
                                 w-3
                                 shrink-0
 
-                                ${
-                                  isActive
-                                    ? "text-green-brand"
-                                    : "text-slate-300"
+                                ${isActive
+                                  ? "text-green-brand"
+                                  : "text-slate-300"
                                 }
                               `}
                             />
@@ -997,10 +989,9 @@ export const ProcessTimeline: React.FC = () => {
                             transition-all
                             duration-700
 
-                            ${
-                              isActive
-                                ? "w-full"
-                                : "w-0"
+                            ${isActive
+                              ? "w-full"
+                              : "w-0"
                             }
                           `}
                         />
@@ -1022,104 +1013,6 @@ export const ProcessTimeline: React.FC = () => {
               CURRENT STEP INFO
           ========================================================= */}
 
-          <div
-            className="
-              mt-8
-              flex
-              flex-col
-              gap-4
-              rounded-2xl
-              border
-              border-slate-200
-              bg-white
-              p-5
-              shadow-sm
-              sm:flex-row
-              sm:items-center
-              sm:justify-between
-            "
-          >
-
-            {/* Current stage */}
-            <div className="flex items-center gap-4">
-
-              <div
-                className="
-                  flex
-                  h-10
-                  w-10
-                  shrink-0
-                  items-center
-                  justify-center
-                  rounded-xl
-                  bg-green-brand/10
-                  text-green-brand
-                "
-              >
-
-                <MousePointer2 className="h-4 w-4" />
-
-              </div>
-
-
-              <div>
-
-                <p
-                  className="
-                    text-[9px]
-                    font-bold
-                    uppercase
-                    tracking-widest
-                    text-green-brand
-                  "
-                >
-                  CURRENT STAGE
-                </p>
-
-                <p
-                  className="
-                    mt-0.5
-                    text-sm
-                    font-bold
-                    text-navy
-                  "
-                >
-                  {currentStep.title}
-                </p>
-
-              </div>
-
-            </div>
-
-
-            {/* Step indicators */}
-            <div className="flex items-center gap-2">
-
-              {processSteps.map((_, index) => (
-
-                <button
-                  key={index}
-                  onClick={() => setActiveStep(index)}
-                  aria-label={`Go to process step ${index + 1}`}
-                  className={`
-                    h-1.5
-                    rounded-full
-                    transition-all
-                    duration-300
-
-                    ${
-                      activeStep === index
-                        ? "w-8 bg-green-brand"
-                        : "w-1.5 bg-slate-200 hover:bg-slate-300"
-                    }
-                  `}
-                />
-
-              ))}
-
-            </div>
-
-          </div>
 
         </div>
 

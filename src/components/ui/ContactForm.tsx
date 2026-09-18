@@ -22,7 +22,7 @@ export const ContactForm: React.FC = () => {
     email: "",
     phone: "",
     service: "Web Development",
-    budget: "₹1,00,000 - ₹3,00,000",
+    budget: "₹10,000 - ₹30,000",
     details: "",
   });
 
@@ -39,10 +39,10 @@ export const ContactForm: React.FC = () => {
   ];
 
   const budgetOptions = [
-    "Under ₹1,00,000",
-    "₹1,00,000 - ₹3,00,000",
-    "₹3,00,000 - ₹7,00,000",
-    "₹7,00,000+",
+    "Under ₹10,000",
+    "₹10,000 - ₹30,000",
+    "₹30,000 - ₹70,000",
+    "₹70,000+",
     "Flexible / To be discussed",
   ];
 
@@ -132,7 +132,7 @@ export const ContactForm: React.FC = () => {
                 email: "",
                 phone: "",
                 service: "Web Development",
-                budget: "₹1,00,000 - ₹3,00,000",
+                budget: "₹10,000 - ₹30,000",
                 details: "",
               });
             }}
@@ -161,7 +161,7 @@ export const ContactForm: React.FC = () => {
         <div className="space-y-1.5">
           <label className="text-xs font-bold uppercase tracking-wider text-navy flex items-center gap-1.5">
             <User className="w-3.5 h-3.5 text-gray-400" />
-            Your Full Name <span className="text-green-brand">*</span>
+            Your Full Name <span className="text-red-500">*</span>
           </label>
           <input
             type="text"
@@ -193,7 +193,7 @@ export const ContactForm: React.FC = () => {
         <div className="space-y-1.5">
           <label className="text-xs font-bold uppercase tracking-wider text-navy flex items-center gap-1.5">
             <Mail className="w-3.5 h-3.5 text-gray-400" />
-            Business Email <span className="text-green-brand">*</span>
+            Business Email <span className="text-red-500">*</span>
           </label>
           <input
             type="email"
@@ -208,11 +208,14 @@ export const ContactForm: React.FC = () => {
         <div className="space-y-1.5">
           <label className="text-xs font-bold uppercase tracking-wider text-navy flex items-center gap-1.5">
             <Phone className="w-3.5 h-3.5 text-gray-400" />
-            Phone Number
+            Phone Number <span className="text-red-500">*</span>
           </label>
           <input
             type="tel"
+            required
             placeholder="+91 98765 43210"
+            pattern="^[6-9]\d{9}$"
+            title="Enter a valid 10-digit phone number"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             className="w-full px-3.5 py-2.5 rounded-md border border-brandBorder text-sm text-brandText-primary placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-brand focus:border-transparent transition-all"
@@ -225,7 +228,7 @@ export const ContactForm: React.FC = () => {
         <div className="space-y-1.5">
           <label className="text-xs font-bold uppercase tracking-wider text-navy flex items-center gap-1.5">
             <Briefcase className="w-3.5 h-3.5 text-gray-400" />
-            Service Required <span className="text-green-brand">*</span>
+            Service Required <span className="text-red-500">*</span>
           </label>
           <select
             value={formData.service}
@@ -263,7 +266,7 @@ export const ContactForm: React.FC = () => {
       <div className="space-y-1.5">
         <label className="text-xs font-bold uppercase tracking-wider text-navy flex items-center gap-1.5">
           <MessageSquare className="w-3.5 h-3.5 text-gray-400" />
-          Project Details & Objectives <span className="text-green-brand">*</span>
+          Project Details & Objectives <span className="text-red-500">*</span>
         </label>
         <textarea
           rows={4}

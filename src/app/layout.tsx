@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://thenexify.com",
+    url: "https://thenexify.in",
     title: "The Nexify | Software Development & Digital Transformation Company",
     description:
       "Technology that solves real business problems. Modern websites, intelligent AI automation, Power BI data analytics, and custom ERP/CRM software.",

@@ -493,7 +493,7 @@ export const TechStackSection: React.FC = () => {
           </div>
 
           {/* Status */}
-          <div className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-wider text-slate-400">
+          {/* <div className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-wider text-slate-400">
 
             <span className="relative flex h-2 w-2">
 
@@ -505,7 +505,7 @@ export const TechStackSection: React.FC = () => {
 
             Technology ecosystem / active
 
-          </div>
+          </div> */}
 
         </div>
 
@@ -802,7 +802,7 @@ export const TechStackSection: React.FC = () => {
                         CATEGORY LABEL
                     ===================================== */}
 
-                    <div className="mt-3 flex items-center gap-1.5">
+                    {/* <div className="mt-3 flex items-center gap-1.5">
 
                       <span
                         className={`
@@ -817,7 +817,7 @@ export const TechStackSection: React.FC = () => {
                         {tech.category}
                       </span>
 
-                    </div>
+                    </div> */}
 
                     {/* =====================================
                         BOTTOM INDICATOR

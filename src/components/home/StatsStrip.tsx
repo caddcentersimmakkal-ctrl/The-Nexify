@@ -306,7 +306,7 @@ export const StatsStrip: React.FC = () => {
             BOTTOM STATUS
         ========================================================= */}
 
-        <div className="relative mt-5 flex flex-col gap-3 rounded-[20px] border border-slate-200/70 bg-white/70 px-6 py-4 backdrop-blur-sm sm:flex-row sm:items-center sm:justify-between">
+        {/* <div className="relative mt-5 flex flex-col gap-3 rounded-[20px] border border-slate-200/70 bg-white/70 px-6 py-4 backdrop-blur-sm sm:flex-row sm:items-center sm:justify-between">
 
           <div className="flex items-center gap-2">
 
@@ -328,7 +328,7 @@ export const StatsStrip: React.FC = () => {
             NXF_CORE_SYSTEM / 2026
           </span>
 
-        </div>
+        </div> */}
 
       </Container>
     </section>

@@ -4,8 +4,8 @@ import { Container } from "@/components/layout/Container";
 import { ShieldCheck, Lock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Nexify IT Solutions",
-  description: "Privacy Policy and Data Protection standards of Nexify IT.",
+  title: "Privacy Policy | The Nexify",
+  description: "Privacy Policy and Data Protection standards of The Nexify.",
 };
 
 export default function PrivacyPage() {
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
               Privacy Policy
             </h1>
             <p className="mt-3 text-sm text-gray-300">
-              Last Updated: January 2026 • Nexify IT Solutions, Madurai, Tamil Nadu, India
+              Last Updated: January 2026 • The Nexify, Madurai, Tamil Nadu, India
             </p>
           </div>
         </Container>
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
                 1. Overview & Commitment
               </h2>
               <p>
-                At Nexify IT Solutions (&ldquo;Nexify IT&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;), we take your privacy and data governance seriously. This Privacy Policy details how we collect, handle, protect, and process personal and corporate data obtained through our website, software products, and consulting engagements.
+                At The Nexify (&ldquo;The Nexify&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;), we take your privacy and data governance seriously. This Privacy Policy details how we collect, handle, protect, and process personal and corporate data obtained through our website, software products, and consulting engagements.
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export default function PrivacyPage() {
                 5. Contacting Our Data Governance Officer
               </h2>
               <p>
-                If you have questions regarding data privacy or wish to request data erasure, please contact us at: <a href="mailto:contact@nexifyit.com" className="text-green-brand font-semibold hover:underline">contact@nexifyit.com</a>.
+                If you have questions regarding data privacy or wish to request data erasure, please contact us at: <a href="mailto:info@thenexify.in" className="text-green-brand font-semibold hover:underline">info@thenexify.in</a>.
               </p>
             </div>
           </div>

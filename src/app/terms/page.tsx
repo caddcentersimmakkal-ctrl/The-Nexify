@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | Nexify IT Solutions",
-  description: "Terms and Conditions of service for Nexify IT Solutions.",
+  title: "Terms & Conditions | The Nexify",
+  description: "Terms and Conditions of service for The Nexify.",
 };
 
 export default function TermsPage() {
@@ -17,7 +17,7 @@ export default function TermsPage() {
               Terms & Conditions
             </h1>
             <p className="mt-3 text-sm text-gray-300">
-              Effective Date: January 2026 • Nexify IT Solutions
+              Effective Date: January 2026 • The Nexify
             </p>
           </div>
         </Container>
@@ -31,7 +31,7 @@ export default function TermsPage() {
                 1. Acceptance of Terms
               </h2>
               <p>
-                By accessing or using the Nexify IT website, engaging our custom software engineering services, or contracting for cloud infrastructure management, you agree to be bound by these Terms and Conditions.
+                By accessing or using The Nexify website, engaging our custom software engineering services, or contracting for cloud infrastructure management, you agree to be bound by these Terms and Conditions.
               </p>
             </div>
 
@@ -58,7 +58,7 @@ export default function TermsPage() {
                 4. Service Level Agreements & Uptime
               </h2>
               <p>
-                For cloud hosting and managed infrastructure services, Nexify IT provides targeted 99.9% uptime SLAs with scheduled maintenance windows communicated in advance.
+                For cloud hosting and managed infrastructure services, The Nexify provides targeted 99.9% uptime SLAs with scheduled maintenance windows communicated in advance.
               </p>
             </div>
 

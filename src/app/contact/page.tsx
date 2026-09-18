@@ -79,10 +79,11 @@ export default function ContactPage() {
                     <div>
                       <span className="font-semibold text-navy block">Direct Email:</span>
                       <a
-                        href="mailto:thenexifymadurai@gmail.com"
+                        href="mailto:info@thenexify.in"
                         className="text-green-brand hover:underline font-medium"
                       >
-                        thenexifymadurai@gmail.com
+
+                        info@thenexify.in
                       </a>
                     </div>
                   </div>
@@ -124,7 +125,7 @@ export default function ContactPage() {
                   Strict NDA & Intellectual Property Protection
                 </h4>
                 <p className="text-xs text-gray-300 leading-relaxed">
-                  All discussions, architecture schemas, and business metrics shared with Nexify IT are strictly confidential.
+                  All discussions, architecture schemas, and business metrics shared with The Nexify are strictly confidential.
                 </p>
               </div>
             </div>

@@ -147,10 +147,10 @@ export const Footer: React.FC = () => {
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-green-brand flex-shrink-0" />
                 <a
-                  href="mailto:thenexifymadurai@gmail.com"
+                  href="mailto:info@thenexify.in"
                   className="text-gray-300 hover:text-green-brand transition-colors text-xs"
                 >
-                  thenexifymadurai@gmail.com
+                  info@thenexify.in
                 </a>
               </div>
 

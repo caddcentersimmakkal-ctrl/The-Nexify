@@ -55,13 +55,13 @@ export async function POST(request: NextRequest) {
 
     // Email sent to Nexify
     await transporter.sendMail({
-      from: `"Nexify IT Website" <${process.env.SMTP_USER}>`,
+      from: `"The Nexify Website" <${process.env.SMTP_USER}>`,
       to: process.env.CONTACT_EMAIL,
       replyTo: email,
-      subject: `New Project Inquiry - ${service || "Nexify IT"}`,
+      subject: `New Project Inquiry - ${service || "The Nexify"}`,
 
       text: `
-New Project Inquiry - Nexify IT
+New Project Inquiry - The Nexify
 
 ----------------------------------------
 CONTACT INFORMATION
@@ -94,7 +94,7 @@ ${details}
 
 ----------------------------------------
 Submitted from:
-Nexify IT Website
+The Nexify Website
       `,
 
       html: `
@@ -124,7 +124,7 @@ Nexify IT Website
               color: #d8e5f2;
               font-size: 14px;
             ">
-              New enquiry received from the Nexify IT website
+              New enquiry received from the The Nexify website
             </p>
           </div>
 
@@ -293,7 +293,7 @@ Nexify IT Website
             color: #9ca3af;
             font-size: 11px;
           ">
-            Nexify IT · Madurai, Tamil Nadu
+            The Nexify · Madurai, Tamil Nadu
           </div>
 
         </div>

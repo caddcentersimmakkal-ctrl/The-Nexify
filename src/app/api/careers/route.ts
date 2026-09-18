@@ -123,7 +123,7 @@ export async function POST(request: NextRequest) {
     // -----------------------------------------
 
     await transporter.sendMail({
-      from: `"Nexify IT Careers" <${process.env.SMTP_USER}>`,
+      from: `"The Nexify Careers" <${process.env.SMTP_USER}>`,
 
       to: process.env.CONTACT_EMAIL,
 
@@ -138,7 +138,7 @@ export async function POST(request: NextRequest) {
       // ---------------------------------------
 
       text: `
-NEXIFY IT
+THE NEXIFY
 NEW JOB APPLICATION
 
 ========================================
@@ -191,7 +191,7 @@ Madurai, Tamil Nadu
 <head>
   <meta charset="UTF-8" />
 
-  <title>New Job Application - Nexify IT</title>
+  <title>New Job Application - The Nexify</title>
 </head>
 
 <body style="
@@ -225,7 +225,7 @@ Madurai, Tamil Nadu
         color:#45B649;
         margin-bottom:8px;
       ">
-        NEXIFY IT
+        THE NEXIFY
       </div>
 
       <h1 style="
@@ -241,7 +241,7 @@ Madurai, Tamil Nadu
         color:#d7e3ef;
         font-size:14px;
       ">
-        A new application has been submitted through the Nexify IT careers page.
+        A new application has been submitted through the The Nexify IT careers page.
       </p>
 
     </div>
@@ -454,9 +454,9 @@ Madurai, Tamil Nadu
       color:#9ca3af;
       font-size:11px;
     ">
-      Nexify IT · Madurai, Tamil Nadu
+      The Nexify · Madurai, Tamil Nadu
       <br />
-      Application received through the Nexify IT Careers website.
+      Application received through the The Nexify Careers website.
     </div>
 
   </div>
