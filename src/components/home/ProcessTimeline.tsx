@@ -54,7 +54,7 @@ export const ProcessTimeline: React.FC = () => {
           title="How We Build & Deliver"
           highlightedText="Solutions"
           description="A structured, transparent engineering process designed to reduce risks, align stakeholders, and turn ideas into reliable digital products."
-          className="mb-14"
+          className="mx-auto text-center mb-14"
         />
 
 
