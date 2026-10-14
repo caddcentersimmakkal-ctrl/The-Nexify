@@ -112,7 +112,7 @@ export const StatsStrip: React.FC = () => {
 
         <div className="relative mb-10 lg:mb-12">
 
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div className="mx-auto mb-4 flex items-center justify-center gap-4">
 
             {/* Left */}
             <div>
