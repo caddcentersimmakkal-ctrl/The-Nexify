@@ -112,7 +112,7 @@ export const ProcessTimeline: React.FC = () => {
               >
 
                 {/* AI Guide label */}
-                <div className="mb-1.5 flex items-center justify-center gap-1.5">
+                {/* <div className="mb-1.5 flex items-center justify-center gap-1.5">
 
                   <div className="relative flex h-3 w-3 items-center justify-center">
 
@@ -152,7 +152,7 @@ export const ProcessTimeline: React.FC = () => {
                     THE NEXIFY AI GUIDE
                   </span>
 
-                </div>
+                </div> */}
 
 
                 {/* Guide message */}
@@ -813,7 +813,7 @@ export const ProcessTimeline: React.FC = () => {
                           STEP NUMBER
                       ================================================= */}
 
-                      <div className="mb-5 flex items-center justify-between">
+                      {/* <div className="mb-5 flex items-center justify-between">
 
                         <span
                           className={`
@@ -845,7 +845,7 @@ export const ProcessTimeline: React.FC = () => {
                           `}
                         />
 
-                      </div>
+                      </div> */}
 
 
                       {/* =================================================
