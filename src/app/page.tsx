@@ -27,7 +27,7 @@ export default function HomePage() {
       {/* <AboutSection /> */}
 
       {/* 6. Technology Stack (Subtle badge grid) */}
-      <TechStackSection />
+      {/* <TechStackSection /> */}
 
       {/* 7. How We Build Process (6-step timeline) */}
       <ProcessTimeline />
