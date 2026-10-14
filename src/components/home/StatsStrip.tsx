@@ -117,7 +117,7 @@ export const StatsStrip: React.FC = () => {
             {/* Left */}
             <div>
 
-              <div className="mb-4 flex items-center gap-2">
+              {/* <div className="mb-4 flex items-center gap-2">
 
                 <span className="h-1.5 w-1.5 rounded-full bg-green-brand" />
 
@@ -125,9 +125,9 @@ export const StatsStrip: React.FC = () => {
                   NEXIFY / CAPABILITIES
                 </span>
 
-              </div>
+              </div> */}
 
-              <h2 className="max-w-2xl text-3xl font-black tracking-[-0.04em] text-navy sm:text-4xl lg:text-[42px]">
+              <h2 className="text-center text-3xl font-black tracking-[-0.04em] text-navy sm:text-4xl lg:text-[42px]">
                 Built for modern
                 <span className="text-green-brand">
                   {" "}digital operations.
@@ -137,7 +137,7 @@ export const StatsStrip: React.FC = () => {
             </div>
 
             {/* Right */}
-            <div className="flex items-center gap-2 text-xs text-brandText-secondary lg:pb-1">
+            {/* <div className="flex items-center gap-2 text-xs text-brandText-secondary lg:pb-1">
 
               <Activity className="h-4 w-4 text-green-brand" />
 
@@ -145,7 +145,7 @@ export const StatsStrip: React.FC = () => {
                 Technology · Intelligence · Infrastructure
               </span>
 
-            </div>
+            </div> */}
 
           </div>
         </div>
