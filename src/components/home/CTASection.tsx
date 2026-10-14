@@ -24,10 +24,10 @@ export const CTASection: React.FC = () => {
             Have a Business Challenge?
           </h2>
 
-          <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          {/* <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Let&apos;s turn your idea, process or business challenge into a practical
             technology solution.
-          </p>
+          </p> */}
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
