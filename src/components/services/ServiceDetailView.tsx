@@ -68,11 +68,11 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-8 space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/5 border border-white/10">
-                {/* <span className="text-xs font-mono font-bold text-green-brand">
+              {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/5 border border-white/10">
+                <span className="text-xs font-mono font-bold text-green-brand">
                   SERVICE {service.number}
-                </span> */}
-              </div>
+                </span> 
+              </div> */}
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
                 {service.title}
@@ -92,9 +92,50 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
               </div>
             </div>
 
-            <div className="lg:col-span-4 hidden lg:flex justify-end">
+            {/* <div className="lg:col-span-4 hidden lg:flex justify-end">
               <div className="w-32 h-32 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center shadow-2xl backdrop-blur-md">
                 {getIcon()}
+              </div>
+            </div> */}
+
+            <div className="lg:col-span-4 w-full">
+              <div className="group relative mx-auto w-full max-w-md">
+
+                {/* Ambient brand glow */}
+                <div className="absolute -inset-3 rounded-3xl bg-cyan-tech/10 blur-2xl transition-opacity duration-500 group-hover:bg-green-brand/15" />
+
+                {/* Image container */}
+                <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 shadow-2xl">
+
+                  <img
+                    src={service.image}
+                    alt={`${service.title} solutions by Nexify`}
+                    className="h-64 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 sm:h-72 lg:h-[340px]"
+                  />
+
+                  {/* Dark gradient for premium finish */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/10 to-transparent" />
+
+                  {/* Bottom image label */}
+                  {/* <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
+                    <div className="mb-2 flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-green-brand shadow-[0_0_10px_rgba(69,182,73,0.8)]" />
+                      <span className="text-xs font-semibold uppercase tracking-[0.18em] text-green-brand">
+                        Nexify Solutions
+                      </span>
+                    </div>
+
+                    <h2 className="text-xl font-bold text-white sm:text-2xl">
+                      {service.title}
+                    </h2>
+                    <p className="mt-1 text-sm leading-relaxed text-gray-300">
+                      Built around your business needs.
+                    </p>
+                  </div> */}
+
+                  {/* Decorative corner accent */}
+                  <div className="pointer-events-none absolute right-0 top-0 h-16 w-16 rounded-bl-3xl border-b border-l border-green-brand/50" />
+                </div>
               </div>
             </div>
           </div>
