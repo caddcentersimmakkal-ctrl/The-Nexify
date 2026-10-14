@@ -11,6 +11,7 @@ export interface ServiceDetail {
   shortDescription: string;
   fullDescription: string;
   iconName: "Code" | "BarChart3" | "Sparkles" | "Database" | "Cloud";
+  image: string;
   features: string[];
   capabilities: {
     title: string;
@@ -34,6 +35,7 @@ export const servicesData: ServiceDetail[] = [
     fullDescription:
       "The Nexify crafts enterprise-ready web platforms, customer portals, and high-conversion business websites tailored to scale your operations. We utilize clean architecture, modern frontend frameworks, and robust APIs to ensure optimal speed, security, and search engine visibility.",
     iconName: "Code",
+    image: "/images/services/web-development.jpg",
     features: [
       "Corporate Websites",
       "Web Applications",
@@ -109,6 +111,7 @@ export const servicesData: ServiceDetail[] = [
     fullDescription:
       "Unlock the true potential of your company's records. The Nexify cleans, models, and visualizes complex enterprise data into interactive Power BI dashboards, automated MIS reporting pipelines, and real-time operational KPI trackers.",
     iconName: "BarChart3",
+    image: "/images/services/data-analytics.jpg",
     features: [
       "Business Dashboards",
       "SQL Analytics",
@@ -184,6 +187,7 @@ export const servicesData: ServiceDetail[] = [
     fullDescription:
       "The Nexify empowers enterprises with custom AI assistants, OCR document extraction systems, and multi-step workflow automation. We integrate modern LLMs and intelligent bots directly into your existing communication and operational channels.",
     iconName: "Sparkles",
+    image: "/images/services/ai-automation.jpg",
     features: [
       "AI Assistants",
       "AI Chatbots",
@@ -259,6 +263,7 @@ export const servicesData: ServiceDetail[] = [
     fullDescription:
       "Ditch fragmented spreadsheets and off-the-shelf rigid software. Nexify IT builds tailor-made ERP and CRM solutions engineered around your exact manufacturing, distribution, retail, or service-based workflows.",
     iconName: "Database",
+    image: "/images/services/erp-crm.jpg",
     features: [
       "CRM",
       "Inventory",
@@ -334,6 +339,7 @@ export const servicesData: ServiceDetail[] = [
     fullDescription:
       "Keep your critical business applications online 24/7 with zero downtime. Nexify IT provisions, secures, and manages high-performance cloud hosting environments, automated SSL encryption, disaster recovery backups, and domain infrastructure.",
     iconName: "Cloud",
+    image: "/images/services/web-hosting.jpg",
     features: [
       "Hosting",
       "Cloud Deployment",
