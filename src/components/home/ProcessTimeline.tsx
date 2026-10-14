@@ -913,7 +913,7 @@ export const ProcessTimeline: React.FC = () => {
                           DELIVERABLES
                       ================================================= */}
 
-                      <div
+                      {/* <div
                         className={`
                           mt-4
                           border-t
@@ -962,7 +962,7 @@ export const ProcessTimeline: React.FC = () => {
 
                         ))}
 
-                      </div>
+                      </div> */}
 
 
                       {/* =================================================
