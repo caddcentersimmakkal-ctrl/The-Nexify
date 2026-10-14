@@ -55,7 +55,7 @@ export default function AboutPage() {
   return (
     <div className="font-sans">
       {/* Page Header (Navy Hero) */}
-      <section className="bg-navy text-white py-16 lg:py-24 relative overflow-hidden border-b border-navy-dark">
+      {/* <section className="bg-navy text-white py-16 lg:py-24 relative overflow-hidden border-b border-navy-dark">
         <div className="absolute inset-0 hero-grid-pattern opacity-50 pointer-events-none" />
         <Container className="relative z-10">
           <div className="max-w-3xl">
@@ -74,6 +74,58 @@ export default function AboutPage() {
               We specialize in custom web applications, business analytics, AI automation,
               and enterprise resource management systems.
             </p>
+          </div>
+        </Container>
+      </section> */}
+
+      <section className="bg-navy text-white py-16 lg:py-24 relative overflow-hidden border-b border-navy-dark">
+        {/* Background grid */}
+        <div className="absolute inset-0 hero-grid-pattern opacity-50 pointer-events-none" />
+
+        <Container className="relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+            {/* Left: About Content */}
+            <div className="max-w-3xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/5 border border-white/10 mb-4">
+                <span className="w-2 h-2 rounded-full bg-green-brand" />
+                <span className="text-xs font-bold uppercase tracking-widest text-green-brand">
+                  WHO WE ARE
+                </span>
+              </div>
+
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                Technology Built Around{" "}
+                <span className="text-green-brand">Your Business</span>
+              </h1>
+
+              <p className="mt-5 text-base sm:text-lg text-gray-300 leading-relaxed">
+                Nexify is a digital transformation company based in Madurai,
+                Tamil Nadu. We specialize in custom web applications, business
+                analytics, AI automation, and enterprise resource management systems.
+              </p>
+            </div>
+
+            {/* Right: About Image */}
+            <div className="relative w-full max-w-xl mx-auto lg:ml-auto">
+              {/* Decorative glow */}
+              <div className="absolute -inset-4 bg-green-brand/10 blur-3xl rounded-full" />
+
+              <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img
+                  src="/images/about-img.jpg"
+                  alt="Nexify digital transformation and technology solutions"
+                  className="w-full h-64 sm:h-80 lg:h-[360px] object-cover"
+                />
+
+                {/* Image overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
+              </div>
+
+              {/* Accent decoration */}
+              <div className="absolute -bottom-3 -right-3 w-20 h-20 border-b-2 border-r-2 border-green-brand/70 rounded-br-2xl pointer-events-none" />
+            </div>
+
           </div>
         </Container>
       </section>
