@@ -53,7 +53,7 @@ export const ProcessTimeline: React.FC = () => {
           eyebrow=""
           title="How We Build & Deliver"
           highlightedText="Solutions"
-          description="A structured, transparent engineering process designed to reduce risks, align stakeholders, and turn ideas into reliable digital products."
+          description=""
           className="mx-auto text-center mb-14"
         />
 
