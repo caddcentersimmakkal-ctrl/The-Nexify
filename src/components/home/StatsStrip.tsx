@@ -130,7 +130,7 @@ export const StatsStrip: React.FC = () => {
               <h2 className="text-center text-3xl font-black tracking-[-0.04em] text-navy sm:text-4xl lg:text-[42px]">
                 Built for modern
                 <span className="text-green-brand">
-                  {" "}digital operations.
+                  {" "}digital operations
                 </span>
               </h2>
 
@@ -208,9 +208,9 @@ export const StatsStrip: React.FC = () => {
                   </div>
 
                   {/* Number */}
-                  <span className="font-mono text-[9px] font-semibold tracking-[0.2em] text-slate-300">
+                  {/* <span className="font-mono text-[9px] font-semibold tracking-[0.2em] text-slate-300">
                     0{index + 1}
-                  </span>
+                  </span> */}
 
                 </div>
 
