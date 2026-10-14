@@ -50,9 +50,9 @@ export const CTASection: React.FC = () => {
             </Button>
           </div>
 
-          <div className="pt-8 text-xs text-gray-400">
+          {/* <div className="pt-8 text-xs text-gray-400">
             Based in Madurai, Tamil Nadu • Serving Enterprises Nationwide
-          </div>
+          </div> */}
         </div>
       </Container>
     </section>
