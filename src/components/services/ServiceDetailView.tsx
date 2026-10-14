@@ -69,9 +69,9 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-8 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/5 border border-white/10">
-                <span className="text-xs font-mono font-bold text-green-brand">
+                {/* <span className="text-xs font-mono font-bold text-green-brand">
                   SERVICE {service.number}
-                </span>
+                </span> */}
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
@@ -109,7 +109,7 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
             <div className="lg:col-span-8 space-y-12">
               <div>
                 <SectionHeader
-                  eyebrow="CAPABILITIES"
+                  eyebrow=""
                   title="What We Engineer in"
                   highlightedText={service.title}
                   description="Modular, high-performance implementations built to align with your exact business processes."
@@ -122,12 +122,12 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
                       key={cap.title}
                       className="bg-brandBg-secondary p-6 rounded-xl border border-brandBorder shadow-card hover:border-green-brand/50 transition-all"
                     >
-                      <div className="flex items-center justify-between mb-3">
+                      {/* <div className="flex items-center justify-between mb-3">
                         <span className="text-xs font-mono font-bold text-green-brand">
                           {cap.metrics}
                         </span>
                         <ShieldCheck className="w-4 h-4 text-cyan-tech" />
-                      </div>
+                      </div> */}
                       <h3 className="text-base font-bold text-navy mb-2">
                         {cap.title}
                       </h3>
@@ -140,7 +140,7 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
               </div>
 
               {/* Business Benefits */}
-              <div className="bg-brandBg-secondary rounded-xl p-8 border border-brandBorder">
+              {/* <div className="bg-brandBg-secondary rounded-xl p-8 border border-brandBorder">
                 <h3 className="text-lg font-bold text-navy mb-4">
                   Business ROI & Impact
                 </h3>
@@ -156,10 +156,10 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               {/* Technologies */}
-              <div>
+              {/* <div>
                 <h3 className="text-lg font-bold text-navy mb-4">
                   Technologies & Frameworks
                 </h3>
@@ -173,7 +173,7 @@ export const ServiceDetailView: React.FC<ServiceDetailViewProps> = ({
                     </span>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               {/* FAQs */}
               {service.faq && service.faq.length > 0 && (
