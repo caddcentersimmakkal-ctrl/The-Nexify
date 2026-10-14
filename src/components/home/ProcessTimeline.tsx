@@ -50,7 +50,7 @@ export const ProcessTimeline: React.FC = () => {
         ========================================================= */}
 
         <SectionHeader
-          eyebrow="OUR METHODOLOGY"
+          eyebrow=""
           title="How We Build & Deliver"
           highlightedText="Solutions"
           description="A structured, transparent engineering process designed to reduce risks, align stakeholders, and turn ideas into reliable digital products."
