@@ -167,14 +167,14 @@ export const WhatWeDoSection: React.FC = () => {
           <h2 className="text-4xl font-black leading-[1] tracking-[-0.045em] text-navy sm:text-5xl lg:text-6xl">
             Technology built around your{" "}
             <span className="text-green-brand">
-              business.
+              business
             </span>
           </h2>
 
           {/* Description */}
-          <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-brandText-secondary lg:text-base">
+          {/* <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-brandText-secondary lg:text-base">
             Digital solutions. Measurable outcomes.
-          </p>
+          </p> */}
         </div>
 
         {/* =========================================================
